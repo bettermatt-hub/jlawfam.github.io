@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+.intro {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+}
+
+.portfolio {
+    padding: 2rem;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+    max-width: 1020px; /* Added to limit the images to a maximum of 3 per row */
+    margin: 0 auto; /* Added to center the grid */
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    will-change: opacity;
+}
+
+.visible {
+    opacity: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.social-links a:hover {
+    color: #ddd;
+}
