@@ -92,11 +92,26 @@ nav a:hover {
 }
 
 .scroll-image {
+  width: calc(90% - 10px);
+  max-width: 100%;
+  margin-bottom: 20px;
   box-sizing: border-box;
   opacity: 0;
   transform: translateY(40px);
-  visibility: hidden;
-  transition: opacity 1s, transform 1s, visibility 1s;
+  transition: opacity 1s, transform 1s;
+}
+
+/* For responsive design */
+@media (max-width: 768px) {
+  .scroll-image {
+    width: calc(80% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-image {
+    width: 100%;
+  }
 }
 
 .fade-in {
